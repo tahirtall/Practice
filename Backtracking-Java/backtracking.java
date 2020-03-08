@@ -20,8 +20,13 @@ class KnightTour {
     }
     
     // A utility function to print the solution matrix board[N][N]
-    static void printSolution(int[] board) {
-        // TODO 
+    static void printSolution(int[][] board) {
+        for (int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
     }
 
     // Function that runs the utility function
