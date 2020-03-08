@@ -37,9 +37,10 @@ class KnightTour {
                 board[i][j] = -1;
             }
         }
-
-
         
+        int[] xMove = {-1, 1, 2, -2, -1, -2, 2, 1};
+        int[] yMove = {2, 2, 1, 1, -2, -1, -1, -2};
+
         return true;
     }
 
