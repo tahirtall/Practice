@@ -69,11 +69,9 @@ class KnightTour {
                     return true;
                 }
                 else {
-                    board[next_x][next_y] = -1;
+                    board[next_x][next_y] = -1; }}
                 }
-            }
-    }
-    return false;
+                return false;
     }
 
     public static void main(String[] args) {
