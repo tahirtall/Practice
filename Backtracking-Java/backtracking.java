@@ -31,7 +31,15 @@ class KnightTour {
 
     // Function that runs the utility function
     static boolean SolveKT() {
-        // TODO
+        int[][] board = new int[N][N];
+        for (int i=0; i<N; i++) {
+            for (int j=0; j<N; j++) {
+                board[i][j] = -1;
+            }
+        }
+
+
+        
         return true;
     }
 
