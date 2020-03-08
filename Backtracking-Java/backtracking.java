@@ -41,7 +41,17 @@ class KnightTour {
         int[] xMove = {-1, 1, 2, -2, -1, -2, 2, 1};
         int[] yMove = {2, 2, 1, 1, -2, -1, -1, -2};
 
-        return true;
+        board[N][N] = 0;
+
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                if(!solveKTUtil(x, y, movei, sol, xMove, yMove)) {
+                    System.out.print("Can't do that");
+                }
+                return true;
+            }
+        }
+        return false;
     }
 
     // The Utility function itself.
