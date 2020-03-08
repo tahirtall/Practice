@@ -23,7 +23,7 @@ class KnightTour {
     static void printSolution(int board[][]) {
         for (int i=0; i<N; i++) {
             for(int j=0; j<N; j++) {
-                System.out.print(board[i][j] + " ");
+                System.out.print(board[i][j] + "    ");
             }
             System.out.print("\n");
         }
@@ -38,8 +38,9 @@ class KnightTour {
             }
         }
         
-        int xMove[] = {-1, 1, 2, -2, -1, -2, 2, 1};
-        int yMove[] = {2, 2, 1, 1, -2, -1, -1, -2};
+        int xMove[] = {2, 1, -1, -2, -2, -1, 1, 2};
+        int yMove[] = {1, 2, 2, 1, -1, -2, -2, -1};
+        
 
         board[0][0] = 0;
 
